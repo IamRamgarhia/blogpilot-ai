@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&family=Lora:wght@400;500&display=swap");
+
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --brand: #3b82f6;
+  --accent: #84cc16;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.prose-invert :where(h1, h2, h3, h4):not(:where([class~="not-prose"] *)) {
+  color: #f8fafc;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+.prose-invert h1 { font-size: 1.875rem; }
+.prose-invert h2 { font-size: 1.25rem; }
+.prose-invert p, .prose-invert ul, .prose-invert li { color: #cbd5e1; line-height: 1.7; }
+.prose-invert ul { list-style: disc; padding-left: 1.25em; }
+.prose-invert .lead { font-size: 1.125rem; }
+.prose-invert a { color: #60a5fa; }
+.prose-invert a:hover { color: #93c5fd; }

@@ -1,0 +1,55 @@
+{
+  "name": "blogpilot-ai",
+  "version": "0.1.0",
+  "description": "Open-source AI-powered SEO content studio. Built by Dice Codes.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "blogpilot-ai": "./bin/blogpilot.mjs"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--enable-source-maps next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "db:generate": "drizzle-kit generate",
+    "doctor": "node ./bin/blogpilot.mjs doctor",
+    "stop": "node -e \"const p=Number(process.env.PORT||3000);try{const c=require('child_process');const cmd=process.platform==='win32'?`for /f \\\"tokens=5\\\" %a in ('netstat -aon ^| findstr :${p}') do taskkill /F /PID %a`:`lsof -ti :${p} | xargs -r kill -9`;c.execSync(cmd,{stdio:'inherit',shell:true})}catch{console.log('No process on port '+p)}\"",
+    "preinstall": "node -e \"const v=process.versions.node.split('.').map(Number);if(v[0]<18){console.error('\\n[BlogPilot] Node 18+ required. You have '+process.versions.node+'. Upgrade: https://nodejs.org/');process.exit(1)}\""
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "drizzle-orm": "^0.36.4",
+    "@libsql/client": "^0.14.0",
+    "zod": "^3.23.8",
+    "zustand": "^5.0.2",
+    "@tanstack/react-query": "^5.62.0",
+    "playwright": "^1.49.0",
+    "cheerio": "^1.0.0",
+    "gray-matter": "^4.0.3",
+    "cross-env": "^7.0.3",
+    "rimraf": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.2",
+    "drizzle-kit": "^0.30.0",
+    "vitest": "^2.1.8",
+    "tailwindcss": "^3.4.16",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "^15.1.0"
+  }
+}
