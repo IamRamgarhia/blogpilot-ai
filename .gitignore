@@ -1,6 +1,8 @@
 node_modules
 .next
 out
+tsconfig.tsbuildinfo
+.tsbuildinfo
 .env
 .env.*
 !.env.example
