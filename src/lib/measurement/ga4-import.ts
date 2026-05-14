@@ -27,7 +27,8 @@ function splitCsvLine(line: string): string[] {
 }
 
 export function parseGA4Csv(csv: string): { rows: GA4Row[]; rejected: number } {
-  const lines = csv.split(/\r?\n/).filter((l) => l.trim());
+  const cleaned = csv.charCodeAt(0) === 0xfeff ? csv.slice(1) : csv;
+  const lines = cleaned.split(/\r?\n/).filter((l) => l.trim());
   if (lines.length === 0) return { rows: [], rejected: 0 };
 
   const header = splitCsvLine(lines[0]).map((c) => c.trim().toLowerCase());

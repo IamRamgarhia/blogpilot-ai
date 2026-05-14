@@ -3,19 +3,32 @@ node_modules
 out
 tsconfig.tsbuildinfo
 .tsbuildinfo
-.env
-.env.*
-!.env.example
+
+# Local database + working data (created by the app at runtime; user data only)
+data/
 *.db
 *.db-journal
 *.db-wal
 *.db-shm
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Build / test artifacts
 dist
 drizzle/meta
 .playwright
 test-results
 playwright-report
+playwright/.cache
+
+# Editor / OS
 .DS_Store
 Thumbs.db
 *.log
+.vscode/*
+!.vscode/extensions.json
+.idea
 .vercel

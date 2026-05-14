@@ -33,7 +33,9 @@ function splitCsvLine(line: string): string[] {
 }
 
 export function parseGSCCsv(csv: string, fallbackUrlForQueriesExport = ""): ParsedCsv {
-  const lines = csv.split(/\r?\n/).filter((l) => l.trim());
+  // Strip UTF-8 BOM if present (Excel-exported CSVs sometimes include it).
+  const cleaned = csv.charCodeAt(0) === 0xfeff ? csv.slice(1) : csv;
+  const lines = cleaned.split(/\r?\n/).filter((l) => l.trim());
   if (lines.length === 0) return { rows: [], rejected: 0 };
 
   const header = splitCsvLine(lines[0]).map((c) => c.trim().toLowerCase());

@@ -21,7 +21,9 @@
     "test:e2e": "playwright test",
     "db:generate": "drizzle-kit generate",
     "doctor": "node ./bin/blogpilot.mjs doctor",
-    "stop": "node -e \"const p=Number(process.env.PORT||3000);try{const c=require('child_process');const cmd=process.platform==='win32'?`for /f \\\"tokens=5\\\" %a in ('netstat -aon ^| findstr :${p}') do taskkill /F /PID %a`:`lsof -ti :${p} | xargs -r kill -9`;c.execSync(cmd,{stdio:'inherit',shell:true})}catch{console.log('No process on port '+p)}\"",
+    "setup": "node ./bin/setup.mjs",
+    "clean": "node ./bin/clean.mjs",
+    "stop": "node ./bin/stop.mjs",
     "preinstall": "node -e \"const v=process.versions.node.split('.').map(Number);if(v[0]<18){console.error('\\n[BlogPilot] Node 18+ required. You have '+process.versions.node+'. Upgrade: https://nodejs.org/');process.exit(1)}\""
   },
   "dependencies": {

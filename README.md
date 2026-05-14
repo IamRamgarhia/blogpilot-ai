@@ -139,27 +139,33 @@ cd blogpilot-ai
 
 Open http://localhost:3000.
 
-### Manual install
+### Manual install (any platform)
 
 ```bash
 npm install
-npx drizzle-kit generate
-cp .env.example .env       # add at least one AI provider key (Gemini is free)
-npm run dev
+npm run setup        # creates ./data/, copies .env.example -> .env, generates migrations
+npm run dev          # http://localhost:3000
 ```
 
 ### Stop the server
 
 ```bash
-npm run stop               # cross-platform; kills whatever's on port 3000
-# or: ./stop.sh / .\stop.ps1
+npm run stop         # cross-platform; kills whatever's on port 3000
+```
+
+### Wipe everything generated (start fresh)
+
+```bash
+npm run clean        # removes .next, data/, tsbuildinfo, test artifacts
 ```
 
 ### Health check
 
 ```bash
-npm run doctor             # checks Node, sqlite, Playwright, write perms
+npm run doctor       # checks Node, libsql, Playwright, write perms
 ```
+
+All user data lives in `./data/blogpilot.db`. Nothing is created outside the project directory.
 
 ---
 

