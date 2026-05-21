@@ -64,6 +64,9 @@ export default async function ClientPage({ params }: { params: Promise<{ id: str
           <Link href={`/clients/${id}/measure`} className="px-3 py-1.5 text-xs rounded-lg border border-slate-700 text-slate-200 hover:bg-slate-800">
             Measure
           </Link>
+          <Link href={`/clients/${id}/tools`} className="px-3 py-1.5 text-xs rounded-lg border border-slate-700 text-slate-200 hover:bg-slate-800">
+            Tools
+          </Link>
           <Link href={`/clients/${id}/hreflang`} className="px-3 py-1.5 text-xs rounded-lg border border-slate-700 text-slate-200 hover:bg-slate-800">
             Hreflang
           </Link>

@@ -109,6 +109,9 @@ export default function DraftPage({ params }: { params: Promise<{ id: string; po
           <button onClick={() => dl("json")} className="px-3 py-1.5 text-xs rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700">
             .json
           </button>
+          <Link href={`/clients/${id}/posts/${postId}/score`} className="px-3 py-1.5 text-xs rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-400">
+            Score
+          </Link>
           <Link href={`/clients/${id}/posts/${postId}/distribute`} className="px-3 py-1.5 text-xs rounded-lg bg-lime-500 text-slate-900 font-medium hover:bg-lime-400">
             Distribute →
           </Link>
