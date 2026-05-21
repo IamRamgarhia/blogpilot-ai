@@ -119,8 +119,8 @@ export default async function HomePage() {
             </Link>
           </div>
           <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl">
-            <Stat number="38" label="Spec modules" />
-            <Stat number="31" label="Methodologies" />
+            <Stat number="39" label="Modules + tools" />
+            <Stat number="45" label="Methodologies" />
             <Stat number="12+" label="AI providers" />
             <Stat number="$0" label="API cost*" />
           </div>
