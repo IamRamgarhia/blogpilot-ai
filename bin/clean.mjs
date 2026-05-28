@@ -6,6 +6,7 @@ const targets = [
   ".next",
   "out",
   "data",
+  ".launcher",
   "tsconfig.tsbuildinfo",
   ".tsbuildinfo",
   "test-results",

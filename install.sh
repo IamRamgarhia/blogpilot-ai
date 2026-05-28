@@ -26,6 +26,7 @@ echo "Installing dependencies..."
 npm install --no-audit --no-fund
 echo -e "${GREEN}OK${NC}  Dependencies installed"
 
+# Runs migrations, env setup, AND creates a Desktop shortcut.
 npm run setup
 
 node ./bin/blogpilot.mjs doctor
@@ -33,7 +34,8 @@ node ./bin/blogpilot.mjs doctor
 echo ""
 echo -e "${GREEN}Install complete.${NC}"
 echo ""
-echo "Next:"
-echo "  1. (Optional) Edit .env to add an AI provider key (Gemini is free)"
-echo "  2. Run: ./start.sh    (or: npm run dev)"
-echo "  3. Open: http://localhost:3000"
+echo "Launch:"
+echo "  • Double-click the \"BlogPilot AI\" shortcut on your Desktop"
+echo "  • OR run: ./start.sh   (or: npm run launch)"
+echo ""
+echo "It opens automatically at http://localhost:44321"

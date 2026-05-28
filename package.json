@@ -11,9 +11,11 @@
     "node": ">=18.17.0"
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--enable-source-maps next dev",
+    "dev": "node ./bin/launch.mjs",
+    "dev:server": "cross-env NODE_OPTIONS=--enable-source-maps next dev -p 44321",
+    "launch": "node ./bin/launch.mjs",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 44321",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

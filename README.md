@@ -269,53 +269,59 @@ The AI doesn't decide what good SEO is. The methodology files do.
 
 ## 🚀 Quick start
 
-### One-command install
+### Install + launch in one command
 
 **macOS / Linux**
 ```bash
 git clone https://github.com/IamRamgarhia/blogpilot-ai
 cd blogpilot-ai
-./install.sh
-./start.sh
+./install.sh        # installs deps, creates Desktop shortcut
+./start.sh          # or just double-click the "BlogPilot AI" Desktop shortcut
 ```
 
 **Windows (PowerShell)**
 ```powershell
 git clone https://github.com/IamRamgarhia/blogpilot-ai
 cd blogpilot-ai
-.\install.ps1
-.\start.ps1
+.\install.ps1       # installs deps, creates Desktop shortcut
+.\start.ps1         # or just double-click "BlogPilot AI" on the Desktop
 ```
 
-Open http://localhost:3000.
+The installer **creates a Desktop shortcut**. Double-click it any time to:
+- Auto-start the server
+- Auto-open `http://localhost:44321` in your browser
+
+> **Port 44321** is IANA-unassigned and chosen so it never collides with other software running on your machine.
 
 ### Manual install
 
 ```bash
 npm install
-npm run setup       # creates ./data/, copies .env.example -> .env, generates migrations
-npm run dev         # http://localhost:3000
+npm run setup       # creates ./data/, copies .env -> .env.example, generates migrations, creates Desktop shortcut
+npm run launch      # one-click: starts server + opens browser at http://localhost:44321
 ```
 
-### Useful commands
+### All commands
 
 ```bash
-npm run dev         # start dev server
-npm run stop        # kill the server (cross-platform)
-npm run clean       # wipe .next, data/, tsbuildinfo, test artifacts
+npm run launch      # start server + auto-open browser (one-click experience)
+npm run dev         # alias for launch
+npm run stop        # kill the server (cross-platform; default port 44321)
+npm run clean       # wipe .next, data/, .launcher, tsbuildinfo, test artifacts
 npm run doctor      # health check (Node, libsql, Playwright, write perms)
 npm test            # 158 unit tests
 npm run typecheck   # TypeScript validation
 ```
 
-All user data lives in `./data/blogpilot.db`. Nothing is created outside the project directory.
+All user data lives in `./data/blogpilot.db`. Nothing is created outside the project directory (except the Desktop shortcut).
 
 ### Add your first client
 
-1. Open http://localhost:3000
-2. Click **+ Add client**, paste any URL
-3. Wait 30-60 seconds for auto-discovery
-4. Explore: **Research** keywords → **Calendar** generator → outline → **Score** the draft → **Distribute** to 7 CMS formats
+1. Double-click the **BlogPilot AI** Desktop shortcut (or run `npm run launch`)
+2. Browser opens at http://localhost:44321
+3. Click **+ Add client**, paste any URL
+4. Wait 30-60 seconds for auto-discovery
+5. Explore: **Research** keywords → **Calendar** generator → outline → **Score** the draft → **Distribute** to 7 CMS formats
 
 ---
 

@@ -2,7 +2,7 @@
 // Cross-platform: kill any process listening on the given port (default 3000).
 import { execSync } from "node:child_process";
 
-const port = Number(process.env.PORT ?? 3000);
+const port = Number(process.env.PORT ?? 44321);
 
 function killWindows() {
   try {

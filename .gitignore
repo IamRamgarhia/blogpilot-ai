@@ -3,6 +3,7 @@ node_modules
 out
 tsconfig.tsbuildinfo
 .tsbuildinfo
+.launcher
 
 # Local database + working data (created by the app at runtime; user data only)
 data/
