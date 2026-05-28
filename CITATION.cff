@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+title: "BlogPilot AI"
+message: "If you use BlogPilot AI in your work or research, please cite it."
+type: software
+authors:
+  - name: "Dice Codes"
+    website: "https://dicecodes.com"
+url: "https://github.com/IamRamgarhia/blogpilot-ai"
+repository-code: "https://github.com/IamRamgarhia/blogpilot-ai"
+abstract: >
+  BlogPilot AI is an open-source, self-hostable SEO content studio that replaces premium tools
+  (Surfer SEO, Ahrefs, Clearscope, Screaming Frog, AlsoAsked, MarketMuse) with a single application
+  the user runs locally. It uses one AI API key (free Google Gemini is sufficient) plus free public
+  endpoints (Bing SERP, Google Autocomplete, Wikipedia, PageSpeed Insights, OpenStreetMap).
+  Features include real-time content scoring against top-10 SERP, a 28-rule technical SEO crawler,
+  PAA tree explorer, SERP feature detector, topic authority scorer via Wikipedia, AI Overviews
+  citation optimizer, llms.txt generator, hreflang manager, and 7 CMS export formats including
+  WordPress XML and Ghost JSON. The Methodology Library ships 45 versioned playbooks codifying
+  current Google Helpful Content, E-E-A-T, and AI Overview citation patterns.
+keywords:
+  - seo
+  - ai-content
+  - content-marketing
+  - content-strategy
+  - keyword-research
+  - technical-seo
+  - schema-markup
+  - eeat
+  - ai-overviews
+  - llms-txt
+  - geo
+  - generative-engine-optimization
+  - open-source
+  - self-hosted
+  - nextjs
+  - typescript
+  - llm
+  - blogging
+  - wordpress
+  - ghost
+  - hugo
+  - surfer-seo-alternative
+  - ahrefs-alternative
+  - clearscope-alternative
+  - screaming-frog-alternative
+license: MIT
+version: "1.0.0"
+date-released: "2026-05-13"
