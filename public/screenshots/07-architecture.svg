@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0F172A"/><stop offset="1" stop-color="#1E293B"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748B"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <text x="640" y="56" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">Architecture</text>
+  <text x="640" y="82" font-size="13" fill="#94A3B8" text-anchor="middle">Single Next.js app · SQLite local DB · methodology-driven AI · free public endpoints</text>
+
+  <!-- User layer -->
+  <rect x="60" y="120" width="1160" height="80" rx="16" fill="#3B82F6" fill-opacity="0.08" stroke="#3B82F6" stroke-opacity="0.4"/>
+  <text x="80" y="148" font-size="10" letter-spacing="1" fill="#60A5FA">USER · BROWSER</text>
+  <g font-size="11">
+    <rect x="80" y="158" width="200" height="32" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="180" y="178" fill="#CBD5E1" text-anchor="middle">Home · Clients · Tools</text>
+    <rect x="296" y="158" width="200" height="32" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="396" y="178" fill="#CBD5E1" text-anchor="middle">Score editor · Audit</text>
+    <rect x="512" y="158" width="200" height="32" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="612" y="178" fill="#CBD5E1" text-anchor="middle">Calendar · Distribute</text>
+    <rect x="728" y="158" width="200" height="32" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="828" y="178" fill="#CBD5E1" text-anchor="middle">Settings · Measure</text>
+    <rect x="944" y="158" width="256" height="32" rx="8" fill="#84CC16" fill-opacity="0.1" stroke="#84CC16" stroke-opacity="0.4"/>
+    <text x="1072" y="178" fill="#A3E635" text-anchor="middle">Public client portal (read-only)</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="640" y1="200" x2="640" y2="232" stroke="#64748B" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- App layer (Next.js) -->
+  <rect x="60" y="240" width="1160" height="100" rx="16" fill="#A78BFA" fill-opacity="0.08" stroke="#A78BFA" stroke-opacity="0.4"/>
+  <text x="80" y="268" font-size="10" letter-spacing="1" fill="#C4B5FD">NEXT.JS 15 · APP ROUTER · 35+ API ROUTES</text>
+  <g font-size="11">
+    <rect x="80" y="280" width="200" height="48" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="180" y="299" fill="#FFFFFF" text-anchor="middle">/api/clients · /api/posts</text>
+    <text x="180" y="316" font-size="10" fill="#94A3B8" text-anchor="middle">CRUD over Drizzle</text>
+
+    <rect x="296" y="280" width="200" height="48" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="396" y="299" fill="#FFFFFF" text-anchor="middle">/api/research · /api/discover</text>
+    <text x="396" y="316" font-size="10" fill="#94A3B8" text-anchor="middle">SSRF-guarded fetch</text>
+
+    <rect x="512" y="280" width="200" height="48" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="612" y="299" fill="#FFFFFF" text-anchor="middle">/api/outline · /api/draft</text>
+    <text x="612" y="316" font-size="10" fill="#94A3B8" text-anchor="middle">AI executor + methodologies</text>
+
+    <rect x="728" y="280" width="200" height="48" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="828" y="299" fill="#FFFFFF" text-anchor="middle">/api/content-score · /api/audit</text>
+    <text x="828" y="316" font-size="10" fill="#94A3B8" text-anchor="middle">Pure local NLP + crawler</text>
+
+    <rect x="944" y="280" width="256" height="48" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="1072" y="299" fill="#FFFFFF" text-anchor="middle">/api/export · /api/export-cms · /api/llms-txt</text>
+    <text x="1072" y="316" font-size="10" fill="#94A3B8" text-anchor="middle">Deterministic exporters</text>
+  </g>
+
+  <!-- Arrow down split -->
+  <line x1="320" y1="340" x2="320" y2="380" stroke="#64748B" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="640" y1="340" x2="640" y2="380" stroke="#64748B" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="960" y1="340" x2="960" y2="380" stroke="#64748B" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- AI Provider Adapter -->
+  <rect x="60" y="390" width="500" height="140" rx="16" fill="#F59E0B" fill-opacity="0.08" stroke="#F59E0B" stroke-opacity="0.4"/>
+  <text x="80" y="418" font-size="10" letter-spacing="1" fill="#FCD34D">AI PROVIDER ADAPTER · METHODOLOGY EXECUTOR</text>
+  <g font-size="11">
+    <rect x="80" y="430" width="220" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="190" y="451" fill="#CBD5E1" text-anchor="middle">45 methodology .md files</text>
+
+    <rect x="316" y="430" width="220" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="426" y="451" fill="#CBD5E1" text-anchor="middle">12+ providers, auto-failover</text>
+
+    <rect x="80" y="476" width="456" height="34" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <text x="308" y="497" fill="#CBD5E1" text-anchor="middle">execute({ methodologies, task, input, providers, jsonMode })</text>
+  </g>
+
+  <!-- DB -->
+  <rect x="580" y="390" width="280" height="140" rx="16" fill="#10B981" fill-opacity="0.08" stroke="#10B981" stroke-opacity="0.4"/>
+  <text x="600" y="418" font-size="10" letter-spacing="1" fill="#34D399">SQLITE · DRIZZLE ORM</text>
+  <g font-size="11" fill="#CBD5E1">
+    <text x="600" y="442">clients</text>
+    <text x="600" y="460">posts (outline, draft, meta, schema)</text>
+    <text x="600" y="478">jobs · usage_events</text>
+    <text x="600" y="496">rank_history · gsc_data · ga4_data</text>
+    <text x="600" y="514">decay_alerts · share_links · ai_keys</text>
+  </g>
+
+  <!-- Crawler + NLP -->
+  <rect x="880" y="390" width="340" height="140" rx="16" fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.4"/>
+  <text x="900" y="418" font-size="10" letter-spacing="1" fill="#22D3EE">LOCAL CRAWLER · LOCAL NLP</text>
+  <g font-size="11" fill="#CBD5E1">
+    <text x="900" y="442">Playwright + Cheerio fallback</text>
+    <text x="900" y="460">SSRF guard · throttle · UA rotation</text>
+    <text x="900" y="478">TF-IDF + n-gram extractor (pure TS)</text>
+    <text x="900" y="496">28 audit rules · Jaccard duplicate</text>
+    <text x="900" y="514">Readability · cannibalization</text>
+  </g>
+
+  <line x1="320" y1="530" x2="320" y2="570" stroke="#64748B" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="640" y1="530" x2="640" y2="570" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="960" y1="530" x2="960" y2="570" stroke="#64748B" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- External -->
+  <rect x="60" y="580" width="500" height="120" rx="16" fill="#F43F5E" fill-opacity="0.08" stroke="#F43F5E" stroke-opacity="0.4"/>
+  <text x="80" y="608" font-size="10" letter-spacing="1" fill="#FB7185">USER-CONFIGURED AI · OPTIONAL</text>
+  <g font-size="11" fill="#CBD5E1">
+    <text x="80" y="634">Gemini · Groq · OpenRouter · Mistral · Cerebras</text>
+    <text x="80" y="652">Anthropic · OpenAI · DeepSeek · Perplexity · xAI</text>
+    <text x="80" y="670">Ollama (local) · LM Studio (local)</text>
+    <text x="80" y="688" fill="#A3E635">All optional — fallback paths work without any key</text>
+  </g>
+
+  <rect x="880" y="580" width="340" height="120" rx="16" fill="#84CC16" fill-opacity="0.08" stroke="#84CC16" stroke-opacity="0.4"/>
+  <text x="900" y="608" font-size="10" letter-spacing="1" fill="#A3E635">FREE PUBLIC ENDPOINTS · NO KEYS</text>
+  <g font-size="11" fill="#CBD5E1">
+    <text x="900" y="634">Bing SERP · Google Autocomplete · PAA</text>
+    <text x="900" y="652">PageSpeed Insights v5 (CrUX)</text>
+    <text x="900" y="670">Wikipedia + Wikidata · DuckDuckGo</text>
+    <text x="900" y="688">OpenStreetMap Overpass (local SEO)</text>
+  </g>
+</svg>

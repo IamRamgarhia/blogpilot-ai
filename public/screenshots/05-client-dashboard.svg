@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0F172A"/><stop offset="1" stop-color="#1E293B"/></linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+
+  <line x1="0" y1="58" x2="1280" y2="58" stroke="#1E293B"/>
+  <path d="M40 22 L66 12 L60 38 L56 28 L40 22Z" fill="#3B82F6" stroke="#84CC16" stroke-width="1"/>
+  <text x="78" y="36" font-size="16" font-weight="700" fill="#FFFFFF">BlogPilot <tspan fill="#60A5FA">AI</tspan></text>
+
+  <text x="60" y="98" font-size="11" fill="#64748B">← All clients</text>
+  <text x="60" y="128" font-size="26" font-weight="700" fill="#FFFFFF">Web Design, SEO &amp; Digital Marketing Agency in Punjab | Dice Codes</text>
+  <text x="60" y="152" font-size="13" fill="#60A5FA">https://dicecodes.com</text>
+
+  <!-- Action row -->
+  <g font-size="11">
+    <rect x="60" y="178" width="80" height="30" rx="8" fill="#3B82F6"/>
+    <text x="100" y="197" fill="#FFFFFF" font-weight="600" text-anchor="middle">Research</text>
+
+    <rect x="148" y="178" width="80" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="188" y="197" fill="#CBD5E1" text-anchor="middle">Calendar</text>
+
+    <rect x="236" y="178" width="92" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="282" y="197" fill="#CBD5E1" text-anchor="middle">Competitors</text>
+
+    <rect x="336" y="178" width="92" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="382" y="197" fill="#CBD5E1" text-anchor="middle">Train voice</text>
+
+    <rect x="436" y="178" width="92" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="482" y="197" fill="#CBD5E1" text-anchor="middle">Refresh post</text>
+
+    <rect x="536" y="178" width="82" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="577" y="197" fill="#CBD5E1" text-anchor="middle">Schedule</text>
+
+    <rect x="626" y="178" width="80" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="666" y="197" fill="#CBD5E1" text-anchor="middle">Measure</text>
+
+    <rect x="714" y="178" width="60" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="744" y="197" fill="#CBD5E1" text-anchor="middle">Tools</text>
+
+    <rect x="782" y="178" width="62" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="813" y="197" fill="#CBD5E1" text-anchor="middle">Audit</text>
+
+    <rect x="852" y="178" width="78" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="891" y="197" fill="#CBD5E1" text-anchor="middle">Hreflang</text>
+
+    <rect x="938" y="178" width="68" height="30" rx="8" fill="none" stroke="#334155"/>
+    <text x="972" y="197" fill="#CBD5E1" text-anchor="middle">llms.txt</text>
+  </g>
+
+  <!-- 4 discovery cards 2x2 -->
+  <g>
+    <rect x="60" y="240" width="580" height="240" rx="16" fill="#0F172A" fill-opacity="0.6" stroke="#1E293B"/>
+    <text x="80" y="266" font-size="11" font-weight="700" fill="#CBD5E1">Identity</text>
+    <g font-size="11">
+      <text x="80" y="294" fill="#64748B">Title</text>
+      <text x="620" y="294" fill="#CBD5E1" text-anchor="end">Dice Codes</text>
+      <text x="80" y="316" fill="#64748B">Description</text>
+      <text x="620" y="316" fill="#CBD5E1" text-anchor="end">Fast, SEO-friendly websites + marketing</text>
+      <text x="80" y="338" fill="#64748B">Language</text>
+      <text x="620" y="338" fill="#CBD5E1" text-anchor="end">en-US</text>
+      <text x="80" y="360" fill="#64748B">Generator</text>
+      <text x="620" y="360" fill="#CBD5E1" text-anchor="end">WordPress 6.9.4</text>
+      <text x="80" y="382" fill="#64748B">Final URL</text>
+      <text x="620" y="382" fill="#CBD5E1" text-anchor="end">https://dicecodes.com/</text>
+      <text x="80" y="404" fill="#64748B">Rendered with</text>
+      <text x="620" y="404" fill="#CBD5E1" text-anchor="end">Playwright</text>
+    </g>
+
+    <rect x="660" y="240" width="560" height="240" rx="16" fill="#0F172A" fill-opacity="0.6" stroke="#1E293B"/>
+    <text x="680" y="266" font-size="11" font-weight="700" fill="#CBD5E1">Sitemap</text>
+    <text x="680" y="294" font-size="11" fill="#64748B">URLs discovered</text>
+    <text x="1200" y="294" font-size="11" fill="#CBD5E1" text-anchor="end">19</text>
+    <g font-size="10" fill="#94A3B8">
+      <text x="680" y="320">https://dicecodes.com/</text>
+      <text x="680" y="338">https://dicecodes.com/website-development/</text>
+      <text x="680" y="356">https://dicecodes.com/mobile-app-development/</text>
+      <text x="680" y="374">https://dicecodes.com/graphic-design-services/</text>
+      <text x="680" y="392">https://dicecodes.com/ecommerce-solutions/</text>
+      <text x="680" y="410">https://dicecodes.com/seo-services/</text>
+      <text x="680" y="428">https://dicecodes.com/digital-marketing/</text>
+    </g>
+
+    <rect x="60" y="500" width="580" height="240" rx="16" fill="#0F172A" fill-opacity="0.6" stroke="#1E293B"/>
+    <text x="80" y="526" font-size="11" font-weight="700" fill="#CBD5E1">Core Web Vitals (mobile)</text>
+    <g font-size="11">
+      <text x="80" y="556" fill="#64748B">Performance</text>
+      <text x="620" y="556" fill="#A3E635" text-anchor="end" font-weight="700">87 / 100</text>
+      <text x="80" y="582" fill="#64748B">LCP</text>
+      <text x="620" y="582" fill="#A3E635" text-anchor="end">1,840 ms</text>
+      <text x="80" y="608" fill="#64748B">INP (field)</text>
+      <text x="620" y="608" fill="#FACC15" text-anchor="end">240 ms</text>
+      <text x="80" y="634" fill="#64748B">CLS</text>
+      <text x="620" y="634" fill="#A3E635" text-anchor="end">0.080</text>
+    </g>
+
+    <rect x="660" y="500" width="560" height="240" rx="16" fill="#0F172A" fill-opacity="0.6" stroke="#1E293B"/>
+    <text x="680" y="526" font-size="11" font-weight="700" fill="#CBD5E1">Social profiles</text>
+    <g font-size="11" fill="#94A3B8">
+      <text x="680" y="556">twitter.com</text>
+      <text x="1200" y="556" fill="#60A5FA" text-anchor="end">twitter.com/dicecodes</text>
+      <text x="680" y="582">linkedin.com</text>
+      <text x="1200" y="582" fill="#60A5FA" text-anchor="end">linkedin.com/company/dicecodes</text>
+      <text x="680" y="608">instagram.com</text>
+      <text x="1200" y="608" fill="#60A5FA" text-anchor="end">instagram.com/dicecodes</text>
+      <text x="680" y="634">facebook.com</text>
+      <text x="1200" y="634" fill="#60A5FA" text-anchor="end">facebook.com/dicecodes</text>
+    </g>
+  </g>
+</svg>

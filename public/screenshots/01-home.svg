@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0.9" cy="0.1" r="0.3"><stop offset="0" stop-color="#3B82F6" stop-opacity="0.2"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="0.05" cy="0.95" r="0.3"><stop offset="0" stop-color="#84CC16" stop-opacity="0.2"/><stop offset="1" stop-color="#84CC16" stop-opacity="0"/></radialGradient>
+    <linearGradient id="head" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#60A5FA"/><stop offset="1" stop-color="#A3E635"/></linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect width="1280" height="800" fill="url(#g1)"/>
+  <rect width="1280" height="800" fill="url(#g2)"/>
+
+  <!-- top bar -->
+  <line x1="0" y1="58" x2="1280" y2="58" stroke="#1E293B" stroke-width="1"/>
+  <path d="M40 22 L66 12 L60 38 L56 28 L40 22Z" fill="#3B82F6" stroke="#84CC16" stroke-width="1"/>
+  <text x="78" y="36" font-size="16" font-weight="700" fill="#FFFFFF">BlogPilot <tspan fill="#60A5FA">AI</tspan></text>
+  <g font-size="13" fill="#CBD5E1">
+    <text x="950" y="36">Clients</text>
+    <text x="1010" y="36">Settings</text>
+    <text x="1075" y="36">About</text>
+  </g>
+  <rect x="1140" y="22" width="20" height="20" rx="3" fill="#84CC16"/>
+  <text x="1165" y="36" font-size="11" fill="#94A3B8">by</text>
+  <text x="1180" y="36" font-size="11" font-weight="700" fill="#FFFFFF">Dice Codes</text>
+
+  <!-- HERO -->
+  <rect x="60" y="92" width="1160" height="280" rx="20" fill="#0F172A" fill-opacity="0.5" stroke="#1E293B"/>
+  <rect x="80" y="112" width="240" height="22" rx="11" fill="#84CC16" fill-opacity="0.08" stroke="#84CC16" stroke-opacity="0.3"/>
+  <text x="92" y="127" font-size="10" fill="#A3E635" letter-spacing="1">V1.0 · 39 MODULES · MIT LICENSED</text>
+
+  <text x="80" y="190" font-size="40" font-weight="700" fill="#FFFFFF">Your clients, your content,</text>
+  <text x="80" y="234" font-size="40" font-weight="700" fill="url(#head)">on autopilot.</text>
+
+  <text x="80" y="270" font-size="14" fill="#CBD5E1">Open-source SEO content studio with everything Surfer, Ahrefs, Clearscope,</text>
+  <text x="80" y="290" font-size="14" fill="#CBD5E1">and MarketMuse charge $400+/mo for. Bring your own AI key.</text>
+
+  <rect x="80" y="312" width="180" height="42" rx="10" fill="#3B82F6"/>
+  <text x="106" y="338" font-size="14" fill="#FFFFFF" font-weight="600">+ Add a client</text>
+  <rect x="270" y="312" width="160" height="42" rx="10" fill="none" stroke="#475569"/>
+  <text x="296" y="338" font-size="14" fill="#CBD5E1">Connect AI key</text>
+
+  <!-- stats row -->
+  <g font-size="22" font-weight="700" fill="#FFFFFF">
+    <text x="80" y="360">39</text>
+    <text x="220" y="360">45</text>
+    <text x="360" y="360">12+</text>
+    <text x="500" y="360" fill="#A3E635">$0</text>
+  </g>
+  <g font-size="9" fill="#94A3B8" letter-spacing="1">
+    <text x="80" y="378">MODULES</text>
+    <text x="220" y="378">METHODOLOGIES</text>
+    <text x="360" y="378">AI PROVIDERS</text>
+    <text x="500" y="378">API COST</text>
+  </g>
+
+  <!-- HEADLINE TOOLS -->
+  <text x="60" y="430" font-size="22" font-weight="700" fill="#FFFFFF">Headline tools</text>
+  <text x="60" y="450" font-size="12" fill="#94A3B8">The four screenshots that replace $400+/mo of premium subscriptions.</text>
+
+  <g>
+    <rect x="60" y="472" width="280" height="140" rx="16" fill="#0F172A" fill-opacity="0.7" stroke="#1E293B"/>
+    <text x="76" y="500" font-size="24">🎯</text>
+    <text x="76" y="528" font-size="14" font-weight="600" fill="#FFFFFF">Content Score editor</text>
+    <text x="76" y="548" font-size="11" fill="#94A3B8">Real-time grading vs top-10 SERP.</text>
+    <text x="76" y="562" font-size="11" fill="#94A3B8">Surfer killer.</text>
+    <rect x="76" y="582" width="170" height="18" rx="9" fill="#84CC16" fill-opacity="0.1"/>
+    <text x="86" y="595" font-size="9" fill="#A3E635" letter-spacing="0.5">REPLACES SURFER · $89/MO</text>
+
+    <rect x="350" y="472" width="280" height="140" rx="16" fill="#0F172A" fill-opacity="0.7" stroke="#1E293B"/>
+    <text x="366" y="500" font-size="24">🌳</text>
+    <text x="366" y="528" font-size="14" font-weight="600" fill="#FFFFFF">PAA Tree</text>
+    <text x="366" y="548" font-size="11" fill="#94A3B8">Recursive People-Also-Ask explorer,</text>
+    <text x="366" y="562" font-size="11" fill="#94A3B8">3 levels deep.</text>
+    <rect x="366" y="582" width="180" height="18" rx="9" fill="#84CC16" fill-opacity="0.1"/>
+    <text x="376" y="595" font-size="9" fill="#A3E635" letter-spacing="0.5">REPLACES ALSOASKED · $15/MO</text>
+
+    <rect x="640" y="472" width="280" height="140" rx="16" fill="#0F172A" fill-opacity="0.7" stroke="#1E293B"/>
+    <text x="656" y="500" font-size="24">🔎</text>
+    <text x="656" y="528" font-size="14" font-weight="600" fill="#FFFFFF">SERP Features</text>
+    <text x="656" y="548" font-size="11" fill="#94A3B8">Snippet, PAA, shopping, map pack,</text>
+    <text x="656" y="562" font-size="11" fill="#94A3B8">video, image, knowledge panel.</text>
+    <rect x="656" y="582" width="170" height="18" rx="9" fill="#84CC16" fill-opacity="0.1"/>
+    <text x="666" y="595" font-size="9" fill="#A3E635" letter-spacing="0.5">REPLACES SEMRUSH · $139/MO</text>
+
+    <rect x="930" y="472" width="290" height="140" rx="16" fill="#0F172A" fill-opacity="0.7" stroke="#1E293B"/>
+    <text x="946" y="500" font-size="24">📊</text>
+    <text x="946" y="528" font-size="14" font-weight="600" fill="#FFFFFF">Topic Authority</text>
+    <text x="946" y="548" font-size="11" fill="#94A3B8">Wikipedia-anchored niche entity</text>
+    <text x="946" y="562" font-size="11" fill="#94A3B8">coverage score.</text>
+    <rect x="946" y="582" width="200" height="18" rx="9" fill="#84CC16" fill-opacity="0.1"/>
+    <text x="956" y="595" font-size="9" fill="#A3E635" letter-spacing="0.5">REPLACES MARKETMUSE · $149/MO</text>
+  </g>
+
+  <!-- 7 hubs preview row -->
+  <text x="60" y="660" font-size="20" font-weight="700" fill="#FFFFFF">7 hubs · 39 modules</text>
+
+  <g font-size="10" font-weight="600">
+    <rect x="60" y="680" width="160" height="80" rx="14" fill="#0F172A" stroke="#3B82F6" stroke-opacity="0.3"/>
+    <text x="74" y="700" fill="#60A5FA" letter-spacing="1">DISCOVER</text>
+    <text x="74" y="720" fill="#CBD5E1" font-weight="400">Auto-crawl, voice trainer</text>
+
+    <rect x="232" y="680" width="160" height="80" rx="14" fill="#0F172A" stroke="#84CC16" stroke-opacity="0.3"/>
+    <text x="246" y="700" fill="#A3E635" letter-spacing="1">RESEARCH</text>
+    <text x="246" y="720" fill="#CBD5E1" font-weight="400">Keywords, PAA, gaps</text>
+
+    <rect x="404" y="680" width="160" height="80" rx="14" fill="#0F172A" stroke="#A78BFA" stroke-opacity="0.3"/>
+    <text x="418" y="700" fill="#C4B5FD" letter-spacing="1">PLAN</text>
+    <text x="418" y="720" fill="#CBD5E1" font-weight="400">Calendar, scheduler</text>
+
+    <rect x="576" y="680" width="160" height="80" rx="14" fill="#0F172A" stroke="#F59E0B" stroke-opacity="0.3"/>
+    <text x="590" y="700" fill="#FCD34D" letter-spacing="1">WRITE</text>
+    <text x="590" y="720" fill="#CBD5E1" font-weight="400">Outline, post, schema</text>
+
+    <rect x="748" y="680" width="160" height="80" rx="14" fill="#0F172A" stroke="#F43F5E" stroke-opacity="0.3"/>
+    <text x="762" y="700" fill="#FB7185" letter-spacing="1">SCORE</text>
+    <text x="762" y="720" fill="#CBD5E1" font-weight="400">Live TF-IDF grading</text>
+
+    <rect x="920" y="680" width="140" height="80" rx="14" fill="#0F172A" stroke="#10B981" stroke-opacity="0.3"/>
+    <text x="934" y="700" fill="#34D399" letter-spacing="1">DISTRIBUTE</text>
+    <text x="934" y="720" fill="#CBD5E1" font-weight="400">Social, CMS exports</text>
+
+    <rect x="1072" y="680" width="148" height="80" rx="14" fill="#0F172A" stroke="#06B6D4" stroke-opacity="0.3"/>
+    <text x="1086" y="700" fill="#22D3EE" letter-spacing="1">MEASURE</text>
+    <text x="1086" y="720" fill="#CBD5E1" font-weight="400">Rank, decay, hreflang</text>
+  </g>
+</svg>

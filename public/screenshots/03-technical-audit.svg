@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0F172A"/><stop offset="1" stop-color="#1E293B"/></linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+
+  <line x1="0" y1="58" x2="1280" y2="58" stroke="#1E293B"/>
+  <path d="M40 22 L66 12 L60 38 L56 28 L40 22Z" fill="#3B82F6" stroke="#84CC16" stroke-width="1"/>
+  <text x="78" y="36" font-size="16" font-weight="700" fill="#FFFFFF">BlogPilot <tspan fill="#60A5FA">AI</tspan></text>
+
+  <text x="60" y="98" font-size="11" fill="#64748B">← Client</text>
+  <text x="60" y="128" font-size="28" font-weight="700" fill="#FFFFFF">Technical SEO audit</text>
+  <text x="60" y="150" font-size="13" fill="#94A3B8">Recursive crawl with 28 deterministic audits. Free, local, no extra APIs.</text>
+
+  <rect x="940" y="118" width="70" height="40" rx="10" fill="#0F172A" stroke="#334155"/>
+  <text x="975" y="143" font-size="13" fill="#FFFFFF" text-anchor="middle">50</text>
+  <rect x="1020" y="118" width="140" height="40" rx="10" fill="#3B82F6"/>
+  <text x="1090" y="143" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Re-run audit</text>
+  <rect x="1170" y="118" width="50" height="40" rx="10" fill="none" stroke="#334155"/>
+  <text x="1195" y="143" font-size="11" fill="#CBD5E1" text-anchor="middle">.csv</text>
+
+  <text x="60" y="190" font-size="11" fill="#94A3B8">42 pages crawled, 87 findings.</text>
+
+  <!-- Summary stats -->
+  <g>
+    <rect x="60" y="210" width="220" height="86" rx="16" fill="#0F172A" stroke="#475569"/>
+    <text x="80" y="252" font-size="36" font-weight="700" fill="#CBD5E1">42</text>
+    <text x="80" y="278" font-size="10" letter-spacing="1" fill="#94A3B8">PAGES</text>
+
+    <rect x="296" y="210" width="220" height="86" rx="16" fill="#0F172A" stroke="#F87171" stroke-opacity="0.3"/>
+    <text x="316" y="252" font-size="36" font-weight="700" fill="#FCA5A5">2</text>
+    <text x="316" y="278" font-size="10" letter-spacing="1" fill="#FCA5A5">CRITICAL</text>
+
+    <rect x="532" y="210" width="220" height="86" rx="16" fill="#0F172A" stroke="#FB923C" stroke-opacity="0.3"/>
+    <text x="552" y="252" font-size="36" font-weight="700" fill="#FDBA74">11</text>
+    <text x="552" y="278" font-size="10" letter-spacing="1" fill="#FDBA74">HIGH</text>
+
+    <rect x="768" y="210" width="220" height="86" rx="16" fill="#0F172A" stroke="#FACC15" stroke-opacity="0.3" stroke-width="2"/>
+    <text x="788" y="252" font-size="36" font-weight="700" fill="#FDE047">31</text>
+    <text x="788" y="278" font-size="10" letter-spacing="1" fill="#FDE047">MEDIUM</text>
+
+    <rect x="1004" y="210" width="216" height="86" rx="16" fill="#0F172A" stroke="#475569"/>
+    <text x="1024" y="252" font-size="36" font-weight="700" fill="#94A3B8">43</text>
+    <text x="1024" y="278" font-size="10" letter-spacing="1" fill="#94A3B8">LOW</text>
+  </g>
+
+  <!-- Cannibalization callout -->
+  <rect x="60" y="320" width="1160" height="90" rx="16" fill="#FB923C" fill-opacity="0.07" stroke="#FB923C" stroke-opacity="0.4"/>
+  <text x="80" y="346" font-size="13" font-weight="700" fill="#FED7AA">Cannibalization · 2 groups</text>
+  <text x="80" y="368" font-size="11" font-family="JetBrains Mono" fill="#FB923C">wordpress seo plugins</text>
+  <text x="220" y="368" font-size="11" fill="#94A3B8">· exact_keyword · 3 posts (post #4 + post #12 + post #29)</text>
+  <text x="80" y="388" font-size="11" font-family="JetBrains Mono" fill="#FB923C">schema markup guide</text>
+  <text x="220" y="388" font-size="11" fill="#94A3B8">· similar_title · 2 posts (post #7 + post #19)</text>
+
+  <!-- Finding cards -->
+  <g>
+    <rect x="60" y="430" width="1160" height="84" rx="12" fill="#0F172A" stroke="#1E293B"/>
+    <circle cx="84" cy="455" r="4" fill="#F87171"/>
+    <rect x="100" y="446" width="60" height="18" rx="9" fill="#F87171" fill-opacity="0.15" stroke="#F87171" stroke-opacity="0.3"/>
+    <text x="130" y="459" font-size="9" letter-spacing="0.5" fill="#FCA5A5" text-anchor="middle">CRITICAL</text>
+    <text x="172" y="459" font-size="9" letter-spacing="0.5" fill="#64748B">CRAWLABILITY</text>
+    <text x="246" y="459" font-size="9" font-family="JetBrains Mono" fill="#475569">meta-noindex</text>
+    <text x="100" y="478" font-size="13" fill="#FFFFFF">Page is marked noindex</text>
+    <text x="100" y="494" font-size="11" fill="#94A3B8">Remove the noindex directive if the page should appear in search.</text>
+    <text x="100" y="508" font-size="10" fill="#60A5FA">https://example.com/private-thoughts</text>
+  </g>
+
+  <g>
+    <rect x="60" y="528" width="1160" height="84" rx="12" fill="#0F172A" stroke="#1E293B"/>
+    <circle cx="84" cy="553" r="4" fill="#FB923C"/>
+    <rect x="100" y="544" width="44" height="18" rx="9" fill="#FB923C" fill-opacity="0.15" stroke="#FB923C" stroke-opacity="0.3"/>
+    <text x="122" y="557" font-size="9" letter-spacing="0.5" fill="#FDBA74" text-anchor="middle">HIGH</text>
+    <text x="160" y="557" font-size="9" letter-spacing="0.5" fill="#64748B">CONTENT</text>
+    <text x="220" y="557" font-size="9" font-family="JetBrains Mono" fill="#475569">thin-content</text>
+    <text x="100" y="576" font-size="13" fill="#FFFFFF">Only 142 words of body text</text>
+    <text x="100" y="592" font-size="11" fill="#94A3B8">Expand to at least 600 words with original substance. Helpful Content algorithm penalizes thin pages.</text>
+    <text x="100" y="606" font-size="10" fill="#60A5FA">https://example.com/about-us</text>
+  </g>
+
+  <g>
+    <rect x="60" y="626" width="1160" height="84" rx="12" fill="#0F172A" stroke="#1E293B"/>
+    <circle cx="84" cy="651" r="4" fill="#FB923C"/>
+    <rect x="100" y="642" width="44" height="18" rx="9" fill="#FB923C" fill-opacity="0.15" stroke="#FB923C" stroke-opacity="0.3"/>
+    <text x="122" y="655" font-size="9" letter-spacing="0.5" fill="#FDBA74" text-anchor="middle">HIGH</text>
+    <text x="160" y="655" font-size="9" letter-spacing="0.5" fill="#64748B">ON-PAGE</text>
+    <text x="220" y="655" font-size="9" font-family="JetBrains Mono" fill="#475569">duplicate-title</text>
+    <text x="100" y="674" font-size="13" fill="#FFFFFF">Title duplicated across 4 URLs</text>
+    <text x="100" y="690" font-size="11" fill="#94A3B8">Make every page's &lt;title&gt; unique.</text>
+    <text x="100" y="704" font-size="10" fill="#60A5FA">https://example.com/blog/category/wordpress (+3 more)</text>
+  </g>
+
+  <g>
+    <rect x="60" y="724" width="1160" height="60" rx="12" fill="#0F172A" stroke="#1E293B"/>
+    <circle cx="84" cy="754" r="4" fill="#FACC15"/>
+    <rect x="100" y="745" width="60" height="18" rx="9" fill="#FACC15" fill-opacity="0.15" stroke="#FACC15" stroke-opacity="0.3"/>
+    <text x="130" y="758" font-size="9" letter-spacing="0.5" fill="#FDE047" text-anchor="middle">MEDIUM</text>
+    <text x="172" y="758" font-size="9" letter-spacing="0.5" fill="#64748B">IMAGES</text>
+    <text x="226" y="758" font-size="9" font-family="JetBrains Mono" fill="#475569">image-no-dimensions</text>
+    <text x="350" y="758" font-size="11" fill="#FFFFFF">Image missing width/height (causes CLS)</text>
+  </g>
+</svg>

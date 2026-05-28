@@ -4,152 +4,266 @@
 
 # BlogPilot AI — Open-Source AI SEO Content Studio
 
-### Free, self-hostable AI tool for SEO content writing, keyword research, technical site audits, and AI Overview optimization. Replaces Surfer SEO, Ahrefs, Clearscope, Screaming Frog, AlsoAsked, and MarketMuse — all with one AI API key.
+### Free, self-hostable AI tool for SEO content writing, keyword research, technical site audits, AI Overviews optimization, and topic authority scoring. Replaces Surfer SEO, Ahrefs, Clearscope, Screaming Frog, AlsoAsked, and MarketMuse — all with one AI API key.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-3B82F6.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A518.17-3B82F6.svg)](https://nodejs.org)
-[![Tests](https://img.shields.io/badge/tests-158%2F158%20passing-84CC16.svg)](#tests)
+[![Tests](https://img.shields.io/badge/tests-158%2F158%20passing-84CC16.svg)](#-status)
 [![Methodologies](https://img.shields.io/badge/methodologies-45-84CC16.svg)](src/lib/methodologies)
-[![Modules](https://img.shields.io/badge/modules-39-84CC16.svg)](#7-hubs--39-modules)
+[![Modules](https://img.shields.io/badge/modules-39-84CC16.svg)](#-features)
 [![Stars](https://img.shields.io/github/stars/IamRamgarhia/blogpilot-ai?style=flat&color=84CC16)](https://github.com/IamRamgarhia/blogpilot-ai/stargazers)
 [![Built by Dice Codes](https://img.shields.io/badge/built%20by-Dice%20Codes-84CC16.svg)](https://dicecodes.com)
 
-[Quick start](#-quick-start) · [Features](#-features) · [What it replaces](#-what-it-replaces) · [Methodology Library](#-methodology-library) · [FAQ](#-faq) · [Deploy](DEPLOY.md)
+[Quick start](#-quick-start) · [Screenshots](#-screenshots) · [Features](#-features) · [What it replaces](#-what-it-replaces) · [Methodology Library](#-methodology-library--45-versioned-playbooks) · [Architecture](#%EF%B8%8F-architecture) · [FAQ](#-faq) · [Deploy](DEPLOY.md)
+
+<br/>
+
+<img src="public/screenshots/01-home.svg" alt="BlogPilot AI home page showing 39 modules across 7 hubs: Discover, Research, Plan, Write, Score, Distribute, Measure" width="900" />
 
 </div>
 
 ---
 
-## Why BlogPilot AI
+## ⚡ Why BlogPilot AI
 
-**Premium SEO tools cost $400+/month and lock content in their cloud.** Surfer SEO ($89), Ahrefs ($129), Clearscope ($170), MarketMuse ($149), Screaming Frog ($21), AlsoAsked ($15) — each owns one part of the workflow. None talk to each other.
+**Premium SEO tools cost $400+/month and lock content in their cloud.** Surfer SEO ($89), Ahrefs ($129), Clearscope ($170), MarketMuse ($149), Screaming Frog ($21), AlsoAsked ($15) — each owns one part of the workflow. None talk to each other. None let you self-host.
 
 **BlogPilot AI is free, open-source, and self-hostable.** Bring your own AI key — free Google Gemini works (1,500 requests/day). Run it on your laptop, on a free Vercel tier, or in Docker. All client data stays in a single SQLite file you own.
 
-Built for solo bloggers, niche-site owners, SEO agencies, marketing teams, and indie developers managing 1-50 client sites at agency-grade output without subscription fees.
+Built for **solo bloggers**, **niche-site owners**, **SEO agencies**, **marketing teams**, and **indie developers** managing 1-50 client sites at agency-grade output without subscription fees.
 
-**Keywords**: open source SEO tool · AI content writer · SEO content studio · Surfer SEO alternative · Clearscope alternative · MarketMuse alternative · Screaming Frog alternative · AlsoAsked alternative · self-hosted SEO · Next.js SEO app · AI Overviews optimization · GEO (generative engine optimization) · llms.txt generator · technical SEO audit · content cannibalization · topic authority scoring · TF-IDF content scoring · Google E-E-A-T compliance · keyword research without API · free SEO software
+> **Keywords**: open source SEO tool · AI content writer · SEO content studio · Surfer SEO alternative · Clearscope alternative · MarketMuse alternative · Screaming Frog alternative · AlsoAsked alternative · self-hosted SEO · Next.js SEO app · AI Overviews optimization · GEO (generative engine optimization) · llms.txt generator · technical SEO audit · content cannibalization detection · topic authority scoring · TF-IDF content scoring · Google E-E-A-T compliance · keyword research without API · free SEO software · Yoast SEO alternative · Rank Math alternative · content gap analyzer · PAA tree explorer · SERP feature detector · WordPress XML export · Ghost JSON export · llms.txt for AI search
+
+---
+
+## 📸 Screenshots
+
+### Real-Time Content Score Editor (Surfer-killer)
+
+Live grading against the top-10 SERP. Pure local TF-IDF, no AI cost, no rate limits. Updates 800ms after each keystroke.
+
+<img src="public/screenshots/02-content-score.svg" alt="BlogPilot AI Content Score editor showing grade B 78/100 with required term coverage, recommended terms, word count, heading parity, PAA coverage, and over-optimization warnings" width="900" />
+
+### Technical SEO Audit (Screaming Frog-killer)
+
+Recursive crawler runs 28 deterministic audit rules across crawlability, on-page, content, images, schema, and security headers. Severity-graded findings (critical / high / medium / low) with concrete fix suggestions. CSV export. Cannibalization detector included.
+
+<img src="public/screenshots/03-technical-audit.svg" alt="BlogPilot AI Technical SEO audit showing 42 pages crawled, 2 critical, 11 high, 31 medium, 43 low findings with cannibalization detection" width="900" />
+
+### Tools Hub — PAA Tree, SERP Features, Topic Authority
+
+Three free-API tools replace AlsoAsked ($15), SEMrush's SERP feature checker (part of $139), and MarketMuse ($149).
+
+<img src="public/screenshots/04-tools-hub.svg" alt="BlogPilot AI Tools hub with PAA tree explorer showing 3-level deep People Also Ask scrape" width="900" />
+
+### Client Dashboard — Auto-Discovery
+
+Paste any URL, BlogPilot crawls identity, sitemap, Core Web Vitals, and social profiles in 30-60 seconds. Real CrUX field data via PageSpeed Insights v5 (no API key required).
+
+<img src="public/screenshots/05-client-dashboard.svg" alt="BlogPilot AI Client Dashboard showing auto-discovered identity, sitemap with 19 URLs, Core Web Vitals with 87/100 performance, and social profiles" width="900" />
+
+### Distribute — Social Repurposes + Newsletter + 7 CMS Exports + Share Link
+
+Auto-generated social variants for X, LinkedIn, Instagram, Pinterest, WhatsApp. Newsletter excerpts (short + long). Export to WordPress XML, Ghost JSON, Webflow CSV, Hugo, Markdown, HTML, JSON. Signed read-only client portal link.
+
+<img src="public/screenshots/06-distribute.svg" alt="BlogPilot AI Distribute page showing X thread, LinkedIn post, Instagram caption, Pinterest description, newsletter excerpts, and CMS export buttons" width="900" />
 
 ---
 
 ## 🏆 What it replaces
 
-| Premium tool | Monthly price | Replaced by |
+| Premium tool | Monthly price | Replaced by BlogPilot AI |
 |---|---:|---|
-| Surfer SEO | $89 | ✅ Real-time content score editor (TF-IDF vs top-10 SERP) |
-| Clearscope | $170 | ✅ Grade A-F term coverage scoring |
-| Ahrefs Site Audit | $129 | ✅ Technical SEO crawler (28 audit rules) |
-| Screaming Frog | $21 | ✅ Recursive crawler + audit findings + CSV export |
-| MarketMuse | $149 | ✅ Topic authority scorer (Wikipedia entity coverage) |
-| AlsoAsked | $15 | ✅ PAA tree explorer (3 levels deep) |
-| Frase | $45 | ✅ SERP-grounded outline + writer |
-| Jasper | $59 | ✅ AI writer with brand voice trainer |
-| Writesonic | $20 | ✅ AI content + social repurposer |
-| SEMrush SERP features | (part of $139) | ✅ 9-feature detector |
-| Yoast Premium | $99/yr | ✅ Schema generation + meta + readability |
-| Pretty Links Pro | $99/yr | ⏳ (sibling app on roadmap) |
-| **Total saved** | **$700+/month** | **Free, open-source, MIT-licensed** |
+| Surfer SEO | **$89** | ✅ Real-time content score editor (TF-IDF vs top-10 SERP) |
+| Clearscope | **$170** | ✅ Grade A-F term coverage scoring |
+| MarketMuse | **$149** | ✅ Topic authority scorer (Wikipedia entity coverage) |
+| Ahrefs Site Audit | **$129** | ✅ Technical SEO crawler (28 audit rules) |
+| Screaming Frog SEO Spider | **$21** | ✅ Recursive crawler + audit findings + CSV export |
+| AlsoAsked | **$15** | ✅ PAA tree explorer (3 levels deep) |
+| Frase | **$45** | ✅ SERP-grounded outline + writer |
+| Jasper | **$59** | ✅ AI writer with brand voice trainer |
+| Writesonic | **$20** | ✅ AI content + social repurposer |
+| SEMrush SERP features | _(part of $139)_ | ✅ 9-feature detector |
+| Yoast SEO Premium | **$99/yr** | ✅ Schema generation + meta + readability |
+| **Combined monthly cost** | **$700+/mo** | **Free · MIT · self-hosted** |
+
+---
+
+## 👥 Who is this for?
+
+### Solo bloggers
+- Run on your laptop, no infrastructure cost
+- Free Gemini key (1,500 requests/day) writes 30+ posts/month
+- Auto-discovery means you never re-explain your site's voice
+- Built-in rank tracker + decay monitor = know when to refresh
+
+### Niche-site owners
+- Manage 2-20 sites in one dashboard
+- Cluster designer + posting scheduler = predictable publish cadence
+- Content score editor = ship posts that beat the SERP, not just match it
+- Common Crawl backlink intelligence (Wave 9, planned)
+
+### SEO agencies
+- Per-client isolation (one row per client, one folder per export)
+- Client portal share links — no logins needed for client review
+- White-label friendly (toggle Dice Codes branding off in OSS)
+- Bulk technical audits across all client sites
+- WordPress XML / Ghost / Webflow exports match whatever stack the client uses
+
+### Marketing teams
+- Centralize brand voice across writers (paste sample posts → AI extracts profile)
+- Stop reinventing meta + schema + internal links for every post
+- CSV import for GSC + GA4 means no per-user OAuth nightmares
+- E-E-A-T author bio templates pass Quality Rater requirements
+
+### Indie developers
+- Forkable, MIT licensed, no vendor lock-in
+- Methodology Library is markdown — fork it, edit it, add your own
+- 12+ AI providers via one interface = swap models without rewriting prompts
+- Self-host on $0/mo Vercel + Turso libSQL
+
+---
+
+## 🎯 Outcomes you actually get
+
+| Goal | How BlogPilot delivers |
+|---|---|
+| Pass Google's Helpful Content System | `google-helpful-content.md` (22-item compliance check) + `content-formatting-google-likes.md` |
+| Win featured snippets | `featured-snippet-targeting.md` enforces 40-55 word direct-answer paragraphs |
+| Get cited in AI Overviews | `ai-overviews-capture.md` + `passage-ranking-optimization.md` ensure each H2 is standalone-citable |
+| Strengthen E-E-A-T | `eeat-checklist.md` + `eeat-author-bios.md` + auto Person/Organization schema |
+| Find content gaps | Top-10 SERP scrape + heading diff vs competitors |
+| Track ranks for free | Bing + DuckDuckGo SERP scraping with throttle |
+| Detect cannibalization | Exact-keyword + similar-title detection across all client posts |
+| Optimize Core Web Vitals | Auto PSI on discovery + `core-web-vitals-thresholds.md` with ranked fixes |
+| Generate llms.txt | Spec-compliant `llms.txt` + `llms-full.txt` for AI search crawlers |
+| Multi-language sites | 31 BCP 47 presets, hreflang return-tag validation, locale-aware writer |
 
 ---
 
 ## ✨ Features
 
-### Discover
-- **One-URL auto-discovery** — paste any URL, BlogPilot crawls identity, sitemap, Core Web Vitals, social profiles in 30-60 seconds
+### Discover · auto-discovery in 60 seconds
+- **One-URL onboarding** — paste any URL, BlogPilot crawls identity, sitemap, Core Web Vitals, social profiles
 - **Brand voice trainer** — paste 3-5 sample posts, AI extracts tone, voice, sentence length, heading case, em-dash use
 
-### Research
-- **Free keyword research** — Google Autocomplete + People-Also-Ask + Bing SERP top-10
-- **Content gap analyzer** — scrape competitor headings, return missing topics
-- **Competitor blog scanner** — map competitor clusters from their sitemap
-- **PAA tree explorer** — recursive 3-level People-Also-Ask scraping
+### Research · free keyword + competitor data
+- **Keyword research** — Google Autocomplete + People-Also-Ask + Bing SERP top-10, no API keys
+- **Content gap analyzer** — scrapes competitor headings, returns missing topics
+- **Competitor blog scanner** — maps competitor's content clusters from their sitemap
+- **PAA tree explorer** — recursive 3-level People-Also-Ask scraping with collapsible tree view
 
-### Plan
-- **Content calendar generator** — pillar + spoke clusters, intent-classified
-- **Posting scheduler** — niche-aware best day + time recommendations
-- **"What to write next" recommender** — rank data + decay + gaps + cluster coverage
+### Plan · cluster-aware calendars
+- **Content calendar generator** — pillars + spokes, intent-classified, prioritized for quick wins
+- **Posting scheduler** — niche-aware best day + time recommendations, deterministic + timezone-aware
+- **"What to write next" recommender** — synthesizes rank data + decay + gaps + cluster coverage
 
-### Write
-- **Methodology-driven post writer** — every generation loads structured SEO playbooks (E-E-A-T, Skyscraper, featured snippet, PAA, GEO) before the AI call
+### Write · methodology-driven AI
+- **Methodology-driven writer** — every generation loads structured SEO playbooks before the AI call
 - **Outline approval gate** — review structure before AI writes 2,000 words
-- **Auto meta + schema JSON-LD** — Article, FAQ, HowTo, Breadcrumb, Person, Organization, Product
+- **Auto meta + JSON-LD schema** — Article, FAQ, HowTo, Breadcrumb, Person, Organization, Product
 - **Internal linking assistant** — Jaccard + cluster + pillar scoring across all client posts
-- **Image briefs** — alt text, AI generation prompts, stock search terms
-- **Readability dashboard** — Flesch-Kincaid, passive voice, paragraph length
-- **Existing post refresher** — paste a URL, AI rewrites with 2026 freshness
+- **Image briefs** — alt text, AI generation prompts, stock search terms per section
+- **Readability dashboard** — Flesch-Kincaid, passive voice %, paragraph length warnings
+- **Duplicate content checker** — local 4-gram shingle Jaccard
+- **Existing-post refresher** — paste URL → AI rewrites with 2026 freshness + regenerates meta + schema
 
-### Score (the Surfer / Clearscope killer)
-- **Real-time content score editor** — TF-IDF grading against top-10 SERP terms, debounced 800ms keystroke updates
+### Score · the Surfer / Clearscope killer
+- **Real-time content score editor** — TF-IDF grading vs top-10 SERP, debounced 800ms keystroke updates
 - **0-100 grade with A-F card** — gradient progress bars per category
-- **Term coverage chips** — required vs recommended terms, over-optimization warnings
-- **Topic authority scorer** — Wikipedia-anchored niche entity coverage
-- **SERP feature detector** — featured snippet, PAA, shopping, map pack, video, image, knowledge panel, news, X
+- **Term coverage chips** — required (lime) + recommended (blue) + missing (slate) + over-optimization warnings
+- **Topic authority scorer** — Wikipedia + Wikidata entity coverage score
+- **SERP feature detector** — 9 features (snippet, PAA, shopping, map pack, video, image, knowledge panel, news, X)
 
-### Distribute
+### Distribute · ship to anywhere
 - **Social repurposer** — native variants for X / LinkedIn / Instagram / Pinterest / WhatsApp
-- **Newsletter excerpts** — short (240 char) + long (200 word)
-- **CMS exports** — Markdown, HTML, JSON, WordPress XML, Ghost JSON, Webflow CSV, Hugo TOML
-- **Client portal share links** — signed, expiring, no-auth public URLs
+- **Newsletter excerpts** — short (240-char) + long (200-word) variants
+- **CMS exports** — Markdown, HTML, JSON, WordPress WXR (XML), Ghost JSON, Webflow CSV, Hugo TOML
+- **Client portal share links** — signed, expiring (30-day default), no-auth public URLs
 
-### Measure
-- **Rank tracker** — free SERP scraping (Bing + DuckDuckGo fallback), throttled, rotating UA
-- **GSC + GA4 CSV import** — paste CSV, no OAuth required
-- **Content decay monitor** — 4-week trailing avg vs prior 4-week, severity-graded alerts
+### Measure · close the feedback loop
+- **Rank tracker** — free Bing + DuckDuckGo SERP scraping (throttled, rotating UA)
+- **GSC + GA4 CSV import** — paste CSV, no OAuth setup needed
+- **Content decay monitor** — 4-week trailing avg vs prior 4-week, severity-graded alerts with refresh suggestions
 - **Hreflang manager** — 31 BCP 47 language presets + return-tag symmetry validation
 - **llms.txt generator** — spec-compliant `llms.txt` + `llms-full.txt` for AI search crawlers
 
-### Technical SEO audit (Screaming Frog killer)
-- **Recursive crawler** with 28 deterministic audit rules
+### Technical SEO audit · Screaming Frog killer
+- **Recursive crawler** with 28 audit rules
 - Categories: crawlability · on-page · content · images · schema · security headers
-- Severity-graded findings (critical / high / medium / low) with concrete fix suggestions
 - **Cannibalization detector** — exact keyword + similar title signals
+- Severity-graded findings (critical / high / medium / low) with concrete fix suggestions
 - CSV export with formula-injection guard
 
 ---
 
-## 🤖 12+ AI providers, auto-failover
+## 🤖 12+ AI providers · auto-failover
 
 Configure any subset. **Free tier is enough for most users.**
 
-| Provider | Type | Get key |
-|---|---|---|
-| Google Gemini | Free 1,500/day | https://aistudio.google.com/app/apikey |
-| Groq | Free, very fast | https://console.groq.com/keys |
-| OpenRouter | Free + paid models | https://openrouter.ai/keys |
-| Mistral | Free tier | https://console.mistral.ai/ |
-| Cerebras | Free, ultra-fast | https://cloud.cerebras.ai/ |
-| Together AI | $1 free credit | https://api.together.xyz/ |
-| Anthropic Claude | Paid premium | https://console.anthropic.com/ |
-| OpenAI GPT-4o/5 | Paid | https://platform.openai.com/api-keys |
-| DeepSeek | Cheap premium | https://platform.deepseek.com/ |
-| Perplexity | Built-in web search | https://www.perplexity.ai/settings/api |
-| Ollama | Fully local, no key | https://ollama.com/download |
-| LM Studio | Fully local, no key | https://lmstudio.ai/ |
+| Provider | Type | Free quota / pricing | Get key |
+|---|---|---|---|
+| Google Gemini | Free | 1,500 requests/day | [aistudio.google.com](https://aistudio.google.com/app/apikey) |
+| Groq | Free | very fast, generous tier | [console.groq.com](https://console.groq.com/keys) |
+| OpenRouter | Free + paid | many free models | [openrouter.ai](https://openrouter.ai/keys) |
+| Mistral | Free tier | small free tier | [console.mistral.ai](https://console.mistral.ai/) |
+| Cerebras | Free | ultra-fast inference | [cloud.cerebras.ai](https://cloud.cerebras.ai/) |
+| Together AI | Free | $1 free credit | [api.together.xyz](https://api.together.xyz/) |
+| Anthropic Claude | Paid | premium quality | [console.anthropic.com](https://console.anthropic.com/) |
+| OpenAI | Paid | GPT-4o / GPT-5 | [platform.openai.com](https://platform.openai.com/api-keys) |
+| DeepSeek | Paid (cheap) | premium model | [platform.deepseek.com](https://platform.deepseek.com/) |
+| Perplexity | Paid | built-in web search | [perplexity.ai](https://www.perplexity.ai/settings/api) |
+| Ollama | Local | fully offline | [ollama.com/download](https://ollama.com/download) |
+| LM Studio | Local | fully offline | [lmstudio.ai](https://lmstudio.ai/) |
 
 ---
 
-## 📚 Methodology Library
+## 📚 Methodology Library · 45 versioned playbooks
 
-**45 versioned playbook files** at [`src/lib/methodologies/`](src/lib/methodologies/). Every AI generation loads the relevant methodology files first — the AI follows proven SEO patterns instead of guessing.
+The **single most distinctive thing about BlogPilot**. Every AI generation loads structured playbooks first — the AI follows proven SEO patterns instead of guessing.
 
-Highlight methodologies:
+> **The AI doesn't decide what good SEO is. The methodology files do.**
 
-| File | What it codifies |
+### Top-leverage playbooks
+
+| Playbook | What it codifies |
 |---|---|
 | [content-formatting-google-likes.md](src/lib/methodologies/content-formatting-google-likes.md) | 12-section playbook of formatting patterns Google rewards |
 | [google-helpful-content.md](src/lib/methodologies/google-helpful-content.md) | 22-item Helpful Content System compliance checklist |
-| [ai-overviews-capture.md](src/lib/methodologies/ai-overviews-capture.md) | 6 cited-passage patterns for Google AI Overviews, ChatGPT, Perplexity |
-| [passage-ranking-optimization.md](src/lib/methodologies/passage-ranking-optimization.md) | Standalone-citable H2/H3 passages |
-| [eeat-author-bios.md](src/lib/methodologies/eeat-author-bios.md) | E-E-A-T bio templates Quality Raters accept |
+| [ai-overviews-capture.md](src/lib/methodologies/ai-overviews-capture.md) | 6 cited-passage patterns for Google AI Overviews + ChatGPT + Perplexity |
+| [passage-ranking-optimization.md](src/lib/methodologies/passage-ranking-optimization.md) | Make every H2/H3 standalone-citable |
+| [eeat-author-bios.md](src/lib/methodologies/eeat-author-bios.md) | Bio templates Quality Raters accept |
 | [serp-features-targeting.md](src/lib/methodologies/serp-features-targeting.md) | Per-feature capture strategy (9 SERP feature types) |
 | [content-cannibalization-resolution.md](src/lib/methodologies/content-cannibalization-resolution.md) | 301-merge vs differentiate decision tree |
-| [core-web-vitals-thresholds.md](src/lib/methodologies/core-web-vitals-thresholds.md) | 2026 LCP/INP/CLS targets with ranked fixes |
-| [skyscraper-technique.md](src/lib/methodologies/skyscraper-technique.md) | Brian Dean's content depth methodology |
+| [core-web-vitals-thresholds.md](src/lib/methodologies/core-web-vitals-thresholds.md) | 2026 LCP/INP/CLS targets + ranked fixes |
+| [skyscraper-technique.md](src/lib/methodologies/skyscraper-technique.md) | Brian Dean / Backlinko content depth method |
 | [topic-cluster-model.md](src/lib/methodologies/topic-cluster-model.md) | HubSpot pillar + spoke structure |
 
-Plus 35 more covering schema (Article, FAQ, HowTo, Product, Organization, Person), readability, internal linking, image briefs, social repurposing, newsletter excerpts, CMS exports, rank tracking, GSC decay, hreflang, llms.txt, and more.
+Plus 35 more covering schema (Article, FAQ, HowTo, Product, Organization, Person), readability, internal linking, image briefs, social repurposing, newsletter excerpts, CMS exports, rank tracking, GSC decay, hreflang, llms.txt, content refresh, brand voice extraction, content gap analysis, and more.
 
-**Fork the playbooks, edit them, add your own.**
+📂 [Browse all 45 methodologies →](src/lib/methodologies/)
+
+**Fork them, edit them, add your own.**
+
+---
+
+## 🏗️ Architecture
+
+<img src="public/screenshots/07-architecture.svg" alt="BlogPilot AI architecture diagram showing browser layer, Next.js app routes, AI provider adapter with methodology executor, SQLite database via Drizzle, local crawler and NLP, with optional AI providers and free public endpoints" width="900" />
+
+### Why methodology-driven beats prompt-driven
+
+Most AI content tools embed SEO best practices in prompts — invisible, untestable, locked to the developer's worldview. When Google's algorithm shifts, the prompts go stale silently.
+
+BlogPilot stores those best practices in **versioned markdown files** at `src/lib/methodologies/`. Each file is:
+
+- **Auditable** — read it like you'd read a spec
+- **Forkable** — copy it, edit it, ship your own variant
+- **Composable** — the executor loads N methodologies at once
+- **Testable** — output JSON schema lets you verify compliance
+- **Version-controlled** — git diff shows when guidance changed
+
+The AI doesn't decide what good SEO is. The methodology files do.
 
 ---
 
@@ -196,19 +310,27 @@ npm run typecheck   # TypeScript validation
 
 All user data lives in `./data/blogpilot.db`. Nothing is created outside the project directory.
 
+### Add your first client
+
+1. Open http://localhost:3000
+2. Click **+ Add client**, paste any URL
+3. Wait 30-60 seconds for auto-discovery
+4. Explore: **Research** keywords → **Calendar** generator → outline → **Score** the draft → **Distribute** to 7 CMS formats
+
 ---
 
 ## 🔧 Tech stack
 
-| Layer | Choice |
-|---|---|
-| Frontend | Next.js 15 (App Router) + React 19 + TypeScript 5 |
-| Styling | Tailwind CSS 3 + shadcn/ui-inspired components |
-| Database | `@libsql/client` SQLite (prebuilt napi-rs binaries for every platform) |
-| ORM | Drizzle ORM with full type safety |
-| Crawler | Playwright + Cheerio static fallback |
-| Tests | Vitest (unit) + Playwright (e2e) |
-| Deployment | Vercel free tier · Docker · or `npm run dev` locally |
+| Layer | Choice | Rationale |
+|---|---|---|
+| Frontend | Next.js 15 (App Router) + React 19 + TypeScript 5 | SSR, file-routing, modern type safety |
+| Styling | Tailwind CSS 3 + shadcn/ui-inspired primitives + 21st.dev-inspired layouts | Clean, accessible, ship-fast |
+| Database | `@libsql/client` (SQLite) | Prebuilt napi-rs binaries for every Node + OS combo |
+| ORM | Drizzle ORM | First-class type safety, parameterized queries |
+| Crawler | Playwright + Cheerio fallback | Handles JS-rendered + static sites |
+| NLP | Pure-TS TF-IDF + n-gram (no deps) | Zero install footprint, deterministic |
+| Tests | Vitest (unit) + Playwright (e2e) | Fast unit + real-browser e2e |
+| Deployment | Vercel free tier · Docker · or `npm run dev` locally | Three paths, all free |
 
 ---
 
@@ -222,7 +344,28 @@ Tested on:
 | macOS | ✅ | ✅ | ✅ | ✅ |
 | Windows | ✅ | ✅ | ✅ | ✅ |
 
-No Python, no Docker, no Redis, no Visual Studio Build Tools required. See [`.github/workflows/ci.yml`](.github/workflows/ci.yml) for the matrix.
+No Python, no Docker, no Redis, no Visual Studio Build Tools required.
+
+See [`.github/workflows/ci.yml`](.github/workflows/ci.yml) for the CI matrix.
+
+---
+
+## ⚡ Performance benchmarks
+
+Measured on a 2024 M2 MacBook Air with Node 22 and Gemini 2.5 Flash:
+
+| Operation | Time |
+|---|---|
+| Cold `npm run dev` first load | 4-5s |
+| Add client + auto-discovery (50-post site) | 30-60s |
+| Keyword research (autocomplete + PAA + Bing top-10) | 5-8s |
+| Generate content calendar (30 posts) | 8-15s with AI · <1s deterministic fallback |
+| Outline generation (one post) | 4-8s with AI · <100ms fallback |
+| Full draft (1,500 words) | 12-25s with AI · 1s fallback |
+| Content score (after corpus loaded) | 50-150ms per keystroke |
+| Technical audit (50 pages) | 60-120s |
+| PAA tree (3 levels, ~30 nodes) | 60-90s |
+| CMS export (any format) | <100ms |
 
 ---
 
@@ -232,28 +375,37 @@ No Python, no Docker, no Redis, no Visual Studio Build Tools required. See [`.gi
 Yes. MIT licensed. No subscriptions, no usage limits we impose, no telemetry. The only thing you pay for is your AI provider — and Google Gemini's free tier (1,500 requests/day) is enough for most users.
 
 ### Do I need any API keys besides AI?
-No. Bing SERP, Google Autocomplete, PageSpeed Insights v5, Wikipedia, OpenStreetMap — all used without keys. Free public endpoints only. **An AI key is the single thing you configure.**
+**No.** Bing SERP, Google Autocomplete, PageSpeed Insights v5, Wikipedia, OpenStreetMap — all used without keys. Free public endpoints only. **An AI key is the single thing you configure.**
 
 ### Does it work without an AI key at all?
-Most features yes. Every generator has a deterministic rule-based fallback. Content scoring, technical audits, hreflang, schema, llms.txt, internal linking, rank tracking — all pure local code.
+Most features yes. Every generator has a deterministic rule-based fallback. Content scoring, technical audits, hreflang, schema, llms.txt, internal linking, rank tracking — all pure local code that never calls an AI.
 
 ### How does this compare to Surfer SEO?
-Same real-time content score against top-10 SERP. Same term-coverage chips. Same A-F grading. Built with pure TypeScript TF-IDF — no Surfer subscription, runs on your machine.
+Same real-time content score against top-10 SERP. Same term-coverage chips. Same A-F grading. Built with pure TypeScript TF-IDF — no Surfer subscription, runs on your machine. See the [Content Score Editor screenshot](#real-time-content-score-editor-surfer-killer) above.
 
 ### How does this compare to Ahrefs Site Audit?
-Same technical crawler. 28 audit rules across crawlability, on-page, content, images, schema, security headers. Severity-graded findings with concrete fix suggestions. Plus cannibalization detector Ahrefs charges extra for.
+Same technical crawler. 28 audit rules across crawlability, on-page, content, images, schema, security headers. Severity-graded findings with concrete fix suggestions. Plus cannibalization detector Ahrefs charges extra for. See the [Technical Audit screenshot](#technical-seo-audit-screaming-frog-killer).
+
+### How does this compare to Clearscope?
+Same grade A-F content scoring. Same TF-IDF term coverage analysis. Same "required vs recommended" term split. Clearscope is $170/month and locks reports to their dashboard — BlogPilot is free and your data is yours.
+
+### How does this compare to MarketMuse?
+The Topic Authority Scorer provides the same niche-completeness scoring MarketMuse charges $149/month for. Uses Wikipedia + Wikidata as the entity ground truth instead of MarketMuse's proprietary topic model.
+
+### How does this compare to Screaming Frog SEO Spider?
+Same recursive crawler architecture. 28 audit rules covering the same categories (crawlability, on-page, content, images, schema, security headers). Plus a built-in cannibalization detector and severity-graded reporting Screaming Frog doesn't have.
+
+### How does this compare to Jasper / Writesonic?
+Those are pure AI writers. BlogPilot is a full SEO content studio — research, planning, writing, scoring, distribution, measurement, and technical audits in one app. The writer is just one of 39 modules.
 
 ### Does it work for non-English content?
-Yes. The crawler detects the site's language automatically. The post writer respects the detected language. 31 BCP 47 language presets in the hreflang manager. `multi-language-writing` methodology covers locale-specific punctuation and number formatting.
+Yes. The crawler detects the site's language automatically. The post writer respects the detected language. 31 BCP 47 language presets in the hreflang manager. [`multi-language-writing.md`](src/lib/methodologies/multi-language-writing.md) covers locale-specific punctuation and number formatting.
 
 ### Can I use this commercially?
 MIT license. Use it for client work, fork it for an agency, build a SaaS on top — all permitted. Attribution appreciated but not required (Dice Codes branding is toggle-able in OSS mode).
 
-### What's the difference between BlogPilot and Jasper / Writesonic?
-Those are pure AI writers. BlogPilot is a full SEO content studio — research, planning, writing, scoring, distribution, measurement, and technical audits in one app. The writer is just one of 39 modules.
-
-### Does it support WordPress / Ghost / Webflow?
-Yes via export — WordPress WXR, Ghost JSON, Webflow CSV, Hugo TOML, plus generic Markdown / HTML / JSON. Imports the same way any standard CMS importer would.
+### Does it support WordPress / Ghost / Webflow / Hugo?
+Yes via export — WordPress WXR (XML), Ghost JSON, Webflow CSV, Hugo TOML, plus generic Markdown / HTML / JSON. Imports the same way any standard CMS importer would.
 
 ### Can I self-host on Vercel free tier?
 Yes. See [DEPLOY.md](DEPLOY.md). For persistent storage, pair with Turso (free libSQL tier) — same client we use locally.
@@ -267,8 +419,14 @@ Free Bing + DuckDuckGo SERP scraping, throttled 5s between requests. Position 10
 ### What about Core Web Vitals?
 PageSpeed Insights v5 (free, no key) pulls real CrUX field data during auto-discovery. [`core-web-vitals-thresholds.md`](src/lib/methodologies/core-web-vitals-thresholds.md) ships 2026 thresholds with ranked fixes.
 
+### Can I add my own methodology?
+Yes — that's the whole point. Drop a markdown file in `src/lib/methodologies/` with the frontmatter format. The loader picks it up automatically. Reference it from any `execute({ methodologies: [...] })` call. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+### Is my client data private?
+Yes. Everything lives in `./data/blogpilot.db` on your machine. Zero telemetry, zero analytics, zero phone-home. The only outbound traffic is to your configured AI provider and free public endpoints (Bing, PageSpeed Insights, Wikipedia) — and only when you trigger a feature that needs them.
+
 ### What's on the roadmap?
-Common Crawl backlink index (Ahrefs replacement), local SEO audit, image SEO at scale, programmatic SEO template engine, brand mention monitor, HARO scraper. See [`docs/strategy/COMPETITIVE_ROADMAP.md`](docs/strategy/COMPETITIVE_ROADMAP.md).
+Common Crawl backlink intelligence (Ahrefs replacement), local SEO audit (Google Business Profile), image SEO at scale (bulk WebP conversion + alt-text gen), programmatic SEO template engine, brand mention monitor for link reclamation, HARO journalist-request scraper. See [`docs/strategy/COMPETITIVE_ROADMAP.md`](docs/strategy/COMPETITIVE_ROADMAP.md).
 
 ---
 
@@ -276,7 +434,7 @@ Common Crawl backlink index (Ahrefs replacement), local SEO audit, image SEO at 
 
 | | |
 |---|---|
-| **Spec modules** | 38 of 38 (100%) + Score editor |
+| **Modules** | 39 |
 | **API routes** | 35+ |
 | **Pages** | 17 |
 | **CMS exporters** | 7 (Markdown, HTML, JSON, WordPress XML, Ghost, Webflow, Hugo) |
@@ -284,16 +442,30 @@ Common Crawl backlink index (Ahrefs replacement), local SEO audit, image SEO at 
 | **Database tables** | 10 |
 | **Unit tests** | 158 across 27 files |
 | **E2E tests** | 3 (Playwright) |
-| **Lines of TypeScript** | ~7,500 |
+| **TypeScript lines** | ~7,500 |
+| **Cross-version CI** | 12 cells (Node 18/20/22/24 × Ubuntu/macOS/Windows) |
+
+---
+
+## 🔒 Security & privacy
+
+- **SSRF guard** on every user-URL ingress point — blocks localhost, RFC1918, AWS metadata, IPv6 link-local, non-http(s) protocols
+- **CSV formula-injection neutralization** in all CSV exporters (OWASP guidance)
+- **Share-link tokens** — 190 bits of entropy, base64url-encoded, revocable, time-limited
+- **Drizzle parameterized queries** throughout — zero SQL injection surface
+- **No telemetry, no analytics, no phone-home**
+- **Your data, your machine** — single SQLite file in `./data/`
 
 ---
 
 ## 🗺️ Roadmap
 
-Built and shipping. Future waves (PRs welcome):
+### Shipped (Waves 1-8)
+✅ Auto-discovery · ✅ Brand voice trainer · ✅ Keyword research · ✅ Gap analyzer · ✅ Calendar generator · ✅ Outline + writer · ✅ Meta + schema · ✅ Internal linking · ✅ Image briefs · ✅ Readability · ✅ Refresher · ✅ Social repurposer · ✅ Newsletter · ✅ 7 CMS exports · ✅ Client portal · ✅ Rank tracker · ✅ GSC/GA4 import · ✅ Decay monitor · ✅ Hreflang · ✅ llms.txt · ✅ **Content Score Editor** · ✅ **PAA Tree** · ✅ **SERP Features** · ✅ **Topic Authority** · ✅ **Technical Audit (28 rules)** · ✅ **Cannibalization Detector**
 
+### Future waves (PRs welcome)
 - **Wave 9 — Compete with Ahrefs for $0**: Common Crawl ingestion → backlink discovery + anchor distribution + local Domain Authority
-- **Wave 10 — Sibling apps**: OGForge (OG images), ReviewMiner (testimonials), SubjectLab (email subjects), CopyAtlas (conversion copy briefs)
+- **Wave 10 — Sibling apps**: OGForge (OG images), ReviewMiner (testimonials), SubjectLab (email subjects), CopyAtlas (conversion copy briefs), GMBPilot (Google Business Profile scheduler), PriceRadar (competitor pricing-change alerts)
 - Google Search Console + GA4 OAuth (currently CSV-import only)
 - Multi-user workspaces with roles
 - Realtime collaborative editing
@@ -306,15 +478,20 @@ See [`docs/strategy/COMPETITIVE_ROADMAP.md`](docs/strategy/COMPETITIVE_ROADMAP.m
 
 PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-- Add a methodology → drop a markdown file in `src/lib/methodologies/` (see existing files for the frontmatter format)
-- Add an AI provider → implement the `AIProvider` interface in `src/lib/ai/providers/`
-- Add a CMS exporter → create `src/lib/exports/<platform>.ts` and wire it into `/api/export-cms`
+**How to extend BlogPilot:**
+
+- **Add a methodology** → drop a markdown file in `src/lib/methodologies/` (see existing files for the frontmatter format)
+- **Add an AI provider** → implement the `AIProvider` interface in `src/lib/ai/providers/`
+- **Add a CMS exporter** → create `src/lib/exports/<platform>.ts` and wire it into `/api/export-cms`
+- **Add an audit rule** → add a function to `src/lib/technical/audits.ts` that takes a `CrawledPage` and pushes `Finding` objects
 
 ---
 
 ## 📜 License
 
 MIT — free for commercial use, modification, and distribution. See [LICENSE](LICENSE).
+
+If you cite BlogPilot AI in research or content, see [CITATION.cff](CITATION.cff) for the recommended format.
 
 ---
 
@@ -338,6 +515,6 @@ Selected work: Oceglow US · Marby · Anahat Exclusive · Bravo Pizza NYC.
 
 **If BlogPilot saved you a $400+/month subscription, ⭐ this repo.**
 
-[⭐ Star this project](https://github.com/IamRamgarhia/blogpilot-ai/stargazers) · [🐛 Report issue](https://github.com/IamRamgarhia/blogpilot-ai/issues/new?template=bug_report.md) · [💡 Request feature](https://github.com/IamRamgarhia/blogpilot-ai/issues/new?template=feature_request.md) · [📰 Changelog](CHANGELOG.md)
+[⭐ Star this project](https://github.com/IamRamgarhia/blogpilot-ai/stargazers) · [🐛 Report issue](https://github.com/IamRamgarhia/blogpilot-ai/issues/new?template=bug_report.md) · [💡 Request feature](https://github.com/IamRamgarhia/blogpilot-ai/issues/new?template=feature_request.md) · [📰 Changelog](CHANGELOG.md) · [🗺️ Roadmap](docs/strategy/COMPETITIVE_ROADMAP.md)
 
 </div>
